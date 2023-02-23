@@ -1,9 +1,7 @@
 import sys
 import unittest
 import numpy as np
-
 sys.path.append("ML/algorithms/knn")
-
 from knn import KNearestNeighbor
 
 class Test_KNN(unittest.TestCase):
