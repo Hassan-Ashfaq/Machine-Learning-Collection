@@ -1,16 +1,23 @@
+# Import folder where sorting algorithms
 import sys
 import unittest
-sys.path.append("ML/algorithms/knn")
-from knn import KNearestNeighbor
-
 import numpy as np
 
-class Test_KNN(unittest.TestCase):
+# For importing from different folders
+# OBS: This is supposed to be done with automated testing,
+# hence relative to folder we want to import from
+sys.path.append("ML/algorithms/knn")
+
+# If run from local:
+# sys.path.append('../../ML/algorithms/knn/')
+from knn import KNearestNeighbor
+
+class TestKNN(unittest.TestCase):
     def setUp(self):
-        self.X = np.array([[1, 1], [3, 1], [1, 4], [2, 4], [3, 3], [5, 1]])
+        self.x = np.array([[1, 1], [3, 1], [1, 4], [2, 4], [3, 3], [5, 1]])
         self.y = np.array([0, 0, 0, 1, 1, 1])
         self.KNearestNeighbor = KNearestNeighbor(2)
-        self.KNearestNeighbor.train(self.X , self.y)
+        self.KNearestNeighbor.train(self.x , self.y)
         
     def test_k_value(self):
         self.assertTrue(self.KNearestNeighbor.k==2)
