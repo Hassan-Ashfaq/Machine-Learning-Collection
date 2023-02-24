@@ -41,7 +41,7 @@ jobs:
           pytest ML_tests/LinearRegression_tests/LinearRegression_GD.py
           pytest ML_tests/LinearRegression_tests/LinearRegression_normal.py
           
-          pytest ML_tests/knn_tests/knn-unittests.py
+          pytest ML_tests/knn_tests/knn_unittests.py
           pytest ML_tests/LogisticRegression_tests/LogisticRegression_unittest.py
 
       - name: Test with black
@@ -49,7 +49,7 @@ jobs:
           black ML_tests/LinearRegression_tests/LinearRegression_GD.py
           black ML_tests/LinearRegression_tests/LinearRegression_normal.py
           
-          black ML_tests/knn_tests/knn-unittests.py
+          black ML_tests/knn_tests/knn_unittests.py
           black ML_tests/LogisticRegression_tests/LogisticRegression_unittest.py
 
       - name: Test with pylint
@@ -58,5 +58,5 @@ jobs:
           pylint ML_tests/LinearRegression_tests/LinearRegression_GD.py
           pylint ML_tests/LinearRegression_tests/LinearRegression_normal.py
           
-          pylint ML_tests/knn_tests/knn-unittests.py
+          pylint ML_tests/knn_tests/knn_unittests.py
           pylint ML_tests/LogisticRegression_tests/LogisticRegression_unittest.py
