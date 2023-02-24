@@ -1,0 +1,12 @@
+In order to contribute to the repo, or build more features, 
+I have implemented test cases for a two of algorithms, which are
+1. KNN 
+2. Logistic Regression 
+
+Besides running the test cases as a part of the pipeline, we have also run flake8 tests, black, and pylint on the test cases files.
+We have also run codeQL security analysis on Github Actions and Jenkins.
+
+The PyLint tests fail because of certain factors such as missing docstring, not following snake-case etc.
+However, we have ignored these PyLint errors and proceeded the workflow.
+
+There are no security alerts given by CodeQL.
