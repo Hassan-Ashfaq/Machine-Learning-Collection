@@ -1,9 +1,15 @@
+# Import folder where sorting algorithms
 import sys
 import unittest
 import numpy as np
 
+# For importing from different folders
+# OBS: This is supposed to be done with automated testing,
+# hence relative to folder we want to import from
 sys.path.append("ML/algorithms/logisticregression")
 
+# If run from local:
+# sys.path.append('../../ML/algorithms/logisticregression/')
 from logistic_regression import LogisticRegression
 
 class Test_Logistic_Regression(unittest.TestCase):
@@ -27,6 +33,7 @@ class Test_Logistic_Regression(unittest.TestCase):
         out = self.LogisticReg.sigmoid(0)
         self.assertTrue(out==0.5)
  
+
 if __name__ == "__main__":
     print("Running Logistic Regression Tests")
     unittest.main()
