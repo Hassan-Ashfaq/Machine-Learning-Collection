@@ -26,3 +26,7 @@ class Test_Logistic_Regression(unittest.TestCase):
     def test_sigmoid(self):
         out = self.LogisticReg.sigmoid(0)
         self.assertTrue(out==0.5)
+ 
+if __name__ == "__main__":
+    print("Running Logistic Regression tests:")
+    unittest.main()
