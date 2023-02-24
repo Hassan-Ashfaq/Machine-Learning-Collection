@@ -67,5 +67,5 @@ class TestLinearRegression_NormalEq(unittest.TestCase):
 
 
 if __name__ == "__main__":
-    print("Running Linear Regression Normal Equation tests:")
+    print("Running Linear Regression Normal Equation Tests:")
     unittest.main()
