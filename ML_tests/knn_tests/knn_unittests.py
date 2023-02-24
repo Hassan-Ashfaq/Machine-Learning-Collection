@@ -1,4 +1,4 @@
-# Import folder where sorting algorithms
+"""Module unittest knn algo."""
 import sys
 import unittest
 import numpy as np
