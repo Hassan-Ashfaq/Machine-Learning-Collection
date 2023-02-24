@@ -78,5 +78,5 @@ class TestKNN(unittest.TestCase):
         self.assertTrue(y_pred==0.0) 
 
 if __name__ == "__main__":
-    print("Running KNN Tests")
+    print("Running KNN Tests:")
     unittest.main()
