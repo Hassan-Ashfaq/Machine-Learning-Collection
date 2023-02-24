@@ -28,5 +28,5 @@ class Test_Logistic_Regression(unittest.TestCase):
         self.assertTrue(out==0.5)
  
 if __name__ == "__main__":
-    print("Running Logistic Regression Tests:")
+    print("Running Logistic Regression Tests")
     unittest.main()
