@@ -49,3 +49,8 @@ class Test_KNN(unittest.TestCase):
             self.KNearestNeighbor.compute_distance_two_loops(test)
         )
         self.assertTrue(y_pred==0.0) 
+
+if __name__ == "__main__":
+    print("Running KNN tests:")
+    unittest.main()
+    unittest.main()
